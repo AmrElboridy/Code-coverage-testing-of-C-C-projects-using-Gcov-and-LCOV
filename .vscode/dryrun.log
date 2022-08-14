@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Projects/EB/Vcpu/Hard_disk_version/EB_RSU_Repo/Tasks/1-Video-wall_task'
+make: Leaving directory 'c:/Projects/EB/Vcpu/Hard_disk_version/EB_RSU_Repo/Tasks/1-Video-wall_task'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -1,0 +1,33 @@
+
+
+Below are the short summary of the steps to be done in this ticket 
+1. Running the Unit test case (Already executed in the Jenkins stages)
+2. Run GCOV tool ,input are ".gcda" and ".gcno" file & Output is .gcov file 
+(Tools required gcov.exe ,MinGW already in tools folder artifactory )
+3. Run LCOV tool , inputs are ".gcov" and Output is locv.info 
+(Perl chocolate)
+4. Run the python script to generate the coverage.xml file   "lcov_cobertura"
+(Tools required :  python39 already in tools folder artifactory)
+5. Rename the coverage.xml to cobetura.xml –to be clarified with Mbition
+6. Archive the coverage.xml / cobetura.xml inside jenkins
+7. Update the meta.yaml file with the path of the coverage.xml / cobetura.xml  
+
+this is general step by step instruction to generate coverage.xml:
+
+install choco pm - https://chocolatey.org/install#individual
+install perl + lcov - https://fredgrott.medium.com/lcov-on-windows-7c58dda07080
+    - fix - replace in file function C:\ProgramData\chocolatey\lib\lcov\tools\bin\geninfo::solve_relative_path:
+        * if( !( $dir =~ /[a-zA-Z]:
+/ ) ) into  if( !( $dir =~ /[a-zA-Z]:\\\// ) )
+            - cwd(current dir) returns path with '/' instead '\'
+
+compile and run VCPU UT with gcc (MinGW.org GCC-6.3.0-1) 6.3.0 with 
+run gcov 
+    - e.g tools\MinGW\bin\gcov.exe -b -a test_cdd_most_netblock.c
+run lcov 
+    - perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\lcov -c --directory ./ 
+    --rc lcov_branch_coverage=1 -o lcov.info
+    - install important perl packages with cpan like Perl::OSType 
+    - anything what perl will complain about
+run python(version 3.9) -m lcov_cobertura -o coverage.xml lcov.info
+optionally - run genhtml - perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml C:\Users\SlawekFura\repos\Goodware\eb-vcpu-software_full\VCPU\test\unit\test_cdd_most_netblock\lcov.info -o .\genhtml\
