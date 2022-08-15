@@ -31,3 +31,5 @@ run lcov
     - anything what perl will complain about
 run python(version 3.9) -m lcov_cobertura -o coverage.xml lcov.info
 optionally - run genhtml - perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml C:\Users\SlawekFura\repos\Goodware\eb-vcpu-software_full\VCPU\test\unit\test_cdd_most_netblock\lcov.info -o .\genhtml\
+
+

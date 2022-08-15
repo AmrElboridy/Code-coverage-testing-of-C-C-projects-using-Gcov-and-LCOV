@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+                      "http://www.docbook.org/xml/4.4/docbookx.dtd" [
+    <!ENTITY ntool "MBition VCPU">
+    <!ENTITY EB "Elektrobit Automotive GmbH">
+    <!ENTITY copyright "<copyright><year>2012, 2013</year>
+        <holder>Elektrobit Automotive GmbH</holder></copyright>">
+
+    <!ENTITY disclaimer "<legalnotice role='disclaimer'><title>Legal notice</title>
+<para>ALL RIGHTS RESERVED. 
+No part of this publication may be copied in any form, by photocopy, microfilm,
+retrieval system, or by any other means now known or hereafter invented without
+the prior written permission of Elektrobit Automotive
+GmbH.</para><para>ProOSEK<superscript>&#x00AE;</superscript> and
+tresos<superscript>&#x00AE;</superscript> are registered trademarks of
+Elektrobit Automotive GmbH.</para>
+<para>All brand names, trademarks and registered trademarks are property of
+    their rightful owners and are used only for
+    description.</para></legalnotice>">
+]>
+<book lang="en">
+    <bookinfo>
+        <title>Bootloader (MBition VCPU)</title>
+        <subtitle>Unit Test Results</subtitle>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="version.xml">
+            <xi:fallback><edition>version unknown</edition></xi:fallback>
+        </xi:include>
+
+        <address>
+            <firstname>Elektrobit Automotive GmbH</firstname>
+            <street>Am Wolfsmantel 46</street>
+            <postcode>91058</postcode>
+            <city>Erlangen</city>
+            <country>Germany</country>
+            <phone>Tel. +49-9131-7701-0</phone>
+            <fax>Fax +49-9131-7701-6333</fax>
+            <email>info.automotive@elektrobit.com</email>
+        </address>
+        <!-- If you need to include an image on the cover page use the
+             following tag; consult the Marketing department for image usage
+        <mediaobject>
+            <imageobject>
+                <imagedata
+                    fileref="fragments/images/what-the-customer-actually-wanted.jpg"
+                    width="100%" scalefit="1"/>
+            </imageobject>
+        </mediaobject>
+        -->
+        <!-- You must inlcude the following legal disclaimer in all
+             documentations. Consult the legal department if you need to change
+             anything. -->
+        &disclaimer; &copyright; </bookinfo>
+    <!-- <toc id="TOC"/> -->
+    <!-- ************************************************************** -->
+
+    <chapter>
+        <title>Test Results</title>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="../testresults-unittests.xml">
+            <xi:fallback><para>No test results found.</para></xi:fallback>
+        </xi:include>
+    </chapter>
+    <chapter>
+        <title>Test Coverage</title>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="../testresults-coverage.xml">
+            <xi:fallback><para>No coverage result found.</para></xi:fallback>
+        </xi:include>
+    </chapter>
+</book>
+

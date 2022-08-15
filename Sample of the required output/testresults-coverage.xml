@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+  <para>
+    <table>
+      <title>File Coverage</title>
+      <tgroup cols="5">
+        <colspec colnum="1" colwidth="*"/>
+        <colspec align="right" colnum="2" colwidth="7em"/>
+        <colspec align="right" colnum="3" colwidth="7em"/>
+        <colspec align="right" colnum="4" colwidth="7em"/>
+        <colspec align="right" colnum="5" colwidth="7em"/>
+        <thead>
+          <row>
+            <entry>File</entry>
+            <entry>Lines</entry>
+            <entry>Covered</entry>
+            <entry>Branches</entry>
+            <entry>Covered</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>source\SWC_CDD\CDD_CPLD\src\CDD_CPLD.c</entry>
+            <entry>115/117</entry>
+            <entry>98.29 %</entry>
+            <entry>26/27</entry>
+            <entry>96.30 %</entry>
+          </row>
+          <row>
+            <entry>source\SWC_CDD\CDD_PowerSequence\src\CDD_PowerSequence.c</entry>
+            <entry>54/54</entry>
+            <entry>100.00 %</entry>
+            <entry>34/34</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\SWC_CDD\IoHwAbs\src\SWC_IoHwAbs.c</entry>
+            <entry>0/87</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\SWC_CDD\PartitionSwitchMng\src\PartitionSwitchSWC.c</entry>
+            <entry>135/144</entry>
+            <entry>93.75 %</entry>
+            <entry>61/70</entry>
+            <entry>87.14 %</entry>
+          </row>
+          <row>
+            <entry>source\SWC_CDD\SWC_ICCSWUpdate_Forwarding\src\SWC_ICCSWUpdate_forwarding.c</entry>
+            <entry>400/404</entry>
+            <entry>99.01 %</entry>
+            <entry>161/166</entry>
+            <entry>96.99 %</entry>
+          </row>
+          <row>
+            <entry>source\SWC_CDD\SWC_SwUpdateMOST\src\SWC_SwUpdateMOST.c</entry>
+            <entry>39/39</entry>
+            <entry>100.00 %</entry>
+            <entry>12/12</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\application\APP_Prg.c</entry>
+            <entry>21/184</entry>
+            <entry>11.41 %</entry>
+            <entry>2/2</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\application\BL_Nvm.c</entry>
+            <entry>0/51</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\application\BM_Cbk.c</entry>
+            <entry>34/42</entry>
+            <entry>80.95 %</entry>
+            <entry>8/12</entry>
+            <entry>66.67 %</entry>
+          </row>
+          <row>
+            <entry>source\application\BlPduR_cbk.c</entry>
+            <entry>24/76</entry>
+            <entry>31.58 %</entry>
+            <entry>6/6</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\application\CddDoipMostGateway_Cbk.c</entry>
+            <entry>16/18</entry>
+            <entry>88.89 %</entry>
+            <entry>9/9</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\application\DoIPUsr_Cbk.c</entry>
+            <entry>30/30</entry>
+            <entry>100.00 %</entry>
+            <entry>24/24</entry>
+            <entry>100.00 %</entry>
+          </row>
+          <row>
+            <entry>source\application\PROG_Cbk.c</entry>
+            <entry>86/318</entry>
+            <entry>27.04 %</entry>
+            <entry>60/66</entry>
+            <entry>90.91 %</entry>
+          </row>
+          <row>
+            <entry>source\application\SA_Cbk.c</entry>
+            <entry>0/48</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\application\SchM.c</entry>
+            <entry>0/6</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\application\csmwrapper.c</entry>
+            <entry>94/115</entry>
+            <entry>81.74 %</entry>
+            <entry>38/50</entry>
+            <entry>76.00 %</entry>
+          </row>
+          <row>
+            <entry>source\stubs\BswM.c</entry>
+            <entry>0/50</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\stubs\BswM_EthSM.h</entry>
+            <entry>0/2</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\stubs\ComM.c</entry>
+            <entry>0/2</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+          <row>
+            <entry>source\stubs\Dem.c</entry>
+            <entry>0/2</entry>
+            <entry>0.00 %</entry>
+            <entry>0/0</entry>
+            <entry>n/a</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </para>

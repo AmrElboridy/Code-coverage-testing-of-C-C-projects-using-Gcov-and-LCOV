@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuites>
+    <testsuite disabled="0" errors="0" id="test_app_BlPduR_Cbk" name="test_app_BlPduR_Cbk" tests="5" time="3.18099999428" timestamp="20220812T19:49:04">
+      <testcase classname="test_app_BlPduR_Cbk.Application_BlPduR_cbk" name="BlPduR_GetRxPduId_SkeletonTestCase"/>
+      <testcase classname="test_app_BlPduR_Cbk.Application_BlPduR_cbk" name="BlPduR_StoreRxPduId_SkeletonTestCase"/>
+      <testcase classname="test_app_BlPduR_Cbk.Application_BlPduR_cbk" name="BlPduR_Custom_RequestCommunicationUp_SkeletonTestCase"/>
+      <testcase classname="test_app_BlPduR_Cbk.Application_BlPduR_cbk" name="BlPduR_Custom_RequestCommunicationDown_SkeletonTestCase"/>
+      <testcase classname="test_app_BlPduR_Cbk.Application_BlPduR_cbk" name="BlPduR_Custom_Com_Deactivate_SkeletonTestCase"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_APP_Prg" name="test_APP_Prg" tests="2" time="1.49300003052" timestamp="20220812T19:49:07">
+      <testcase classname="test_APP_Prg.APP_Prg" name="APP_ReadMOSTDiagRoutingTable_1"/>
+      <testcase classname="test_APP_Prg.APP_Prg" name="APP_ReadMOSTDiagRoutingTable_2"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_BL_Nvm" name="test_BL_Nvm" tests="1" time="1.22799992561" timestamp="20220812T19:49:08">
+      <testcase classname="test_BL_Nvm.BL_Nvm" name="BL_Nvm_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_BL_Plugin_CDD_DoipMostGateway" name="test_BL_Plugin_CDD_DoipMostGateway" tests="38" time="1.32800006866" timestamp="20220812T19:49:09">
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_RxIndication_coverage_purpose"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_StartOfReception_BufferSizePtr_EQ_NULL_PTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_StartOfReception_BufferSizePtr_NEQ_NULL_PTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_StartOfReception_TpSdulen_Greaterthan_CDDDoipPhysicalBufferSize"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_StartOfReception_TpSdulen_EQ_Zero"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_StartOfReception_TpSdulen_Greater"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_Bufsiz_and_Pduptr_neq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_Bufsiz_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_PduInfoPtr_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_BufPtr_PduInfoPtr_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_BufPtr_PduInfoPtr_neq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_InfoState_neq_Buf_in_progress"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_PduInfoPtr_SduLength_eq_zero"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_Bufinfo_NotGrth_Sdulength"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_TpRxIndication_coverage"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyTxData_TxPduId_Grth_CDDDoipMostGateway_MAX_TX_PDU_NUM"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyTxData_TxPduId_lsth_CDDDoipMostGateway_MAX_TX_PDU_NUM"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyTxData_PduInfoPtr_and_AvailDataPtr_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_TpTxConfirmation_ResBufferInfo_state_eq_MOSTGW_BUFF_TX_CONFIRMATION"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_TpTxConfirmation_ResBufferInfo_state_NEQ_MOSTGW_BUFF_TX_CONFIRMATION"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_Payload_and_Payloadlen_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_Payload_and_Payloadlen_neq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_stMOSTGWResBufferInfo_state_eq_MOSTGW_BUFF_IDLE"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_retVal_eq_EOK"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGatewayTransmit_ExtAmp_SND7_AMS"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGatewayTransmit_ExtAmp_SND7_SWDL"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGatewayTransmit_MOST_ASX7_AMS"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGatewayTransmit_MOST_ASX7_SWDL"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGatewayTransmit_default"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_MainFunction_stMOSTGWResBufferInfo_state_eq_FAILED_RETRY_PENDING"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_MainFunction_Maxnumberofretries_eq_zero"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_MainFunction_stMOSTGWResBufferInfo_state_eq_BUFF_IDLE"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_MainFunction_Maxnumberofretries_eq_0"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_PduInfoPtr_SduLength"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyTxData_RetryInfoPtr_eq_NULLPTR"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_CopyRxData_PduInfoPtr_SduLength_eqZero"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_Payloadlen_Lessth_CDDDoipMostGWResBufSize"/>
+      <testcase classname="test_BL_Plugin_CDD_DoipMostGateway.CddDoipMostGateway" name="CddDoipMostGateway_DiagRespCallback_Payloadlen_Greaterth_CDDDoipMostGWResBufSize"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_bl_plugin_TxDxM3I9R0" name="test_bl_plugin_TxDxM3I9R0" tests="24" time="1.68799996376" timestamp="20220812T19:49:11">
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_UDS_LONG_REQ_OFF"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_invalid_data_NULL_PTR"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_invalid_data_0"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_invalid_data_1"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_writeFingerprint_invalid_data"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_eraseMemory"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_writeFingerprint"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_writeFingerprint_invalidlength"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestDownload"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestTransferData"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestTransferExit"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_checkMemory"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_eraseMemory_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_writeFingerprint_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestDownload_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestTransferData_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_requestTransferExit_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_checkMemory_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_chkProgDependencies"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_chkProgDependencies_vcpu_flag_disabled"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_InstallStatus_aubUdsData_not_NULL_PTR"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_InstallStatus_aubUdsData_eq_NULLPTR"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_InstallStatus_UDS_LONG_REQ_END"/>
+      <testcase classname="test_bl_plugin_TxDxM3I9R0.UDS_LongRequestEnd" name="UDS_LongRequestEnd_InstallStatus_aubUdsData_NULL_PTR"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_BM_Cbk" name="test_BM_Cbk" tests="1" time="1.20700001717" timestamp="20220812T19:49:12">
+      <testcase classname="test_BM_Cbk.BM_Cbk" name="BM_SoftwareInit_INIT_PATTERN"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_BswM" name="test_BswM" tests="1" time="1.20899987221" timestamp="20220812T19:49:14">
+      <testcase classname="test_BswM.BswM" name="BswM_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_CDD_CPLD" name="test_CDD_CPLD" tests="26" time="1.25800013542" timestamp="20220812T19:49:15">
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_Cyclic_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_Init_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_ReadFullVersion_v_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_ReadFullVersion_v_TestCase_2"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_VersionSupportConfig_v_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_u8SPIWrite_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_u8SPIRead_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_u8SPIRead_TestCase_2"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_WriteRegMaskbit_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_WriteRegMaskbit_TestCase_2"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_WriteRegMaskbit_TestCase_3"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_Cpld_WriteRegMaskbit_TestCase_4"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioRead_v_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioRead_v_TestCase_2"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioRead_v_TestCase_3"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_1"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_2"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_3"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_4"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_5"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_6"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_7"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_8"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_9"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_10"/>
+      <testcase classname="test_CDD_CPLD.CDD_CPLD" name="CDD_CPLD_PortExtender_DioWrite_v_TestCase_11"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_CDD_DoipMostGateway" name="test_CDD_DoipMostGateway" tests="7" time="1.23300004005" timestamp="20220812T19:49:16">
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_SND7_AMS_REQUEST"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_SND7_SWDL_REQUEST"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_NWM_CR_FindFirstInstance_ret_0"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_Result_NTFRSLT_E_NOT_OK"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_ASX7_AMS_REQUEST"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_ASX7_SWDL_REQUEST"/>
+      <testcase classname="test_CDD_DoipMostGateway.CddDoipMostGateway_Cbk" name="UsrTpRxIndication_default_case"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_CDD_PowerSequence" name="test_CDD_PowerSequence" tests="33" time="1.28299999237" timestamp="20220812T19:49:17">
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Reset_VCPU_Test"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_1"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_2"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_3"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_4"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_5"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_6"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_7"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetMsocCmd_Test_8"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Start_MSOC_Test_1"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Start_MSOC_Test_2"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Stopp_MSOC_Test_1"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Stopp_MSOC_Test_2"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Stopp_MSOC_Test_3"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Stopp_VCPU_Test_1"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_Stopp_VCPU_Test_2"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_1"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_2"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_3"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_4"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_5"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_6"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_7"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_8"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_9"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_10"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_11"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_12"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_13"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_14"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_15"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_PowerSeqCyclic_Test_16"/>
+      <testcase classname="test_CDD_PowerSequence.CDD_PowerSequence" name="CDD_PowerSequence_RE_SetVsocCmd_Test_1"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_ComM" name="test_ComM" tests="1" time="1.00199985504" timestamp="20220812T19:49:19">
+      <testcase classname="test_ComM.ComM" name="ComM_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_csmwrapper" name="test_csmwrapper" tests="28" time="1.35599994659" timestamp="20220812T19:49:20">
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_1"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_2"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_3"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_4"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_5"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_6"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_7"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_8"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_9"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_10"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_11"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_12"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_13"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_14"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_15"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_16"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_25"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_26"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_27"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_28"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_29"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_30"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_31"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_32"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_33"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_34"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_35"/>
+      <testcase classname="test_csmwrapper.csmwrapper" name="csmwrapper_Test_36"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_Dem" name="test_Dem" tests="1" time="1.007999897" timestamp="20220812T19:49:21">
+      <testcase classname="test_Dem.Dem" name="Dem_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_DoIPUsr_Cbk" name="test_DoIPUsr_Cbk" tests="10" time="1.21499991417" timestamp="20220812T19:49:22">
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPRoutingActivation_3832_ConfirmationCallback_1"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPRoutingActivation_3832_ConfirmationCallback_2"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPRoutingActivation_3832_ConfirmationCallback_3"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_1"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_2"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_3"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_4"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_5"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_6"/>
+      <testcase classname="test_DoIPUsr_Cbk.DoIPUsr_Cbk" name="DoIPStartDiagReceptionUserCallBack_7"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_PartitionSwitchSWC" name="test_PartitionSwitchSWC" tests="34" time="1.48000001907" timestamp="20220812T19:49:23">
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_1"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_2"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_3"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_4"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_5"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_6"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_7"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSwcType_OIR_getCurrentPartition_8"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_1"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_2"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_3"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_4"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_5"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_OIR_setBootPartitionAsync_6"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_1"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_2"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_3"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_4"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_5"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_6"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_7"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_8"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_9"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_10"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_11"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_12"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_13"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_14"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_15"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_16"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_17"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="PartitionSwitchSWC_RE_setBootPartitionEvent_18"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="RetryOperation_RetryCountLessThanMax"/>
+      <testcase classname="test_PartitionSwitchSWC.PartitionSwitchSWC" name="RetryOperation_RetryCountEqualMax"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_PowerSequence" name="test_PowerSequence" tests="0" time="0" timestamp="20220812T19:49:26"/>
+    <testsuite disabled="0" errors="0" id="test_PROG_Cbk" name="test_PROG_Cbk" tests="33" time="1.82399988174" timestamp="20220812T19:49:26">
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CustomCoherencyCheck_BANKA_HSM_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CustomCoherencyCheck_BANKB_HSM_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CustomCoherencyCheck_BANKA_HSM_VALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CustomCoherencyCheck_BANKB_HSM_VALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PartitionSwitchSWC_CustomCoherencyCheckInActiveBank_BANKA_HSM_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PartitionSwitchSWC_CustomCoherencyCheckInActiveBank_BANKB_HSM_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PartitionSwitchSWC_CustomCoherencyCheckInActiveBank_BANKA_HSM_VALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PartitionSwitchSWC_CustomCoherencyCheckInActiveBank_BANKB_HSM_VALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_InvalidateHSMApp_ACTIVE_BANKB"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_InvalidateHSMApp_ACTIVE_BANKA"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_InvalidateHSMApp_ACTIVE_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_ValidateHSMApp_ACTIVE_BANKB"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_ValidateHSMApp_ACTIVE_BANKA"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_ValidateHSMApp_ACTIVE_INVALID"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IncrementHSMReprogCounter_INRANGE_COUNTERS"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IncrementHSMReprogCounter_OUT_OF_RANGE_COUNTERS"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IncrementHSMReprogCounter_OUT_OF_RANGE_BANKA"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IncrementHSMReprogCounter_OUT_OF_RANGE_BANKB"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IsHSMUpdatePossible_INRANGE_COUNTERS"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IsHSMUpdatePossible_OUT_OF_RANGE_COUNTERS"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IsHSMUpdatePossible_OUT_OF_RANGE_BANKA"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="HSMUpdate_IsHSMUpdatePossible_OUT_OF_RANGE_BANKB"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_UpdateKeyProvStatus_ECC5andECC8"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_UpdateKeyProvStatus_ECC5"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_UpdateKeyProvStatus_ECC8"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_UpdateKeyProvStatus_NoKeysProv"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_KeyProvStatus_OK"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_KeyProvStatus_PARTIAL"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="Prog_KeyProvStatus_NOK"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CheckProgRequest_REPROG"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_CheckProgRequest_NOREPROG"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_GetSuppressBitFromAppli_TRUE"/>
+      <testcase classname="test_PROG_Cbk.PROG_Cbk" name="PROG_GetSuppressBitFromAppli_FALSE"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_PROG_Rootkey" name="test_PROG_Rootkey" tests="1" time="1.11100006104" timestamp="20220812T19:49:28">
+      <testcase classname="test_PROG_Rootkey.PROG_Rootkey" name="PROG_Rootkey_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_SA_Cbk" name="test_SA_Cbk" tests="1" time="1.15100002289" timestamp="20220812T19:49:29">
+      <testcase classname="test_SA_Cbk.SA_Cbk" name="SA_Cbk_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_SchM" name="test_SchM" tests="1" time="1.13399982452" timestamp="20220812T19:49:30">
+      <testcase classname="test_SchM.SchM" name="SchM_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_Shell" name="test_Shell" tests="0" time="0" timestamp="20220812T19:49:32"/>
+    <testsuite disabled="0" errors="0" id="test_swc_frwd_MSoC" name="test_swc_frwd_MSoC" tests="115" time="2.02499985695" timestamp="20220812T19:49:32">
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_UdsReqLength_Less_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_UdsReqLength_GreaterThan_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_UdsReqLength_Equal_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_NULL_Ptr_Of_UdsReqLength"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_NULL_Ptr_Of_aubUdsData"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_MSoC_Services_Availability_TRUE_aubUdsData_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_MSoC_Services_Availability_TRUE_NULL_Ptr_Of_UdsReqLength"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_MSoC_Services_Availability_TRUE_UdsReqLength_Greater_Than_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_MSoC_Services_Availability_TRUE_UdsReqLength_Less_Than_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_MSoC_Services_Availability_TRUE_UdsReqLength_Greater_equal_22"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_WriteFingerprint_Flash_SD_Enable"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="SetEvent_WriteFingerPrint_TEST"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_EraseMemory_UdsReqLength_LessThan_6"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_EraseMemory_UdsReqLength_GreaterThan_6"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_EraseMemory_Addr_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_EraseMemory_aubUdsData_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_SomeIP_ret_Call_E_NOT_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_SomeIP_ret_Call_E_NOT_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_SomeIP_ret_Call_E_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_SomeIP_ret_Call_E_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_someip_arg_Call_result_Equal_E_NOT_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_EraseMemory_someip_arg_Call_result_Equal_E_NOT_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_WriteFingerprint_SomeIP_ret_Call_E_NOT_OK_OS_TASK_OsTask_1Min_FingerprintForwardingTimeout_NOT_Called"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_WriteFingerprint_SomeIP_ret_Call_E_OK_OS_TASK_OsTask_1Min_FingerprintForwardingTimeout_NOT_Called"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_WriteFingerprint_someip_arg_Call_result_Equal_E_NOT_OK_OS_TASK_OsTask_1Min_FingerprintForwardingTimeout_NOT_Called"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_WriteFingerprint_OS_TASK_OsTask_1Min_FingerprintForwarding_Called"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_NO_NULL_PTR_addressLength_MoreThan_8_memSizeLength_MoreThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_NO_NULL_PTR_addressLength_MoreThan_8_memSizeLength_LessThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_NO_NULL_PTR_addressLength_LessThan_8_memSizeLength_MoreThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_NO_NULL_PTR_addressLength_EQUAL_8_memSizeLength_EQUAL_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_NO_NULL_PTR_addressLength_LessThan_8_memSizeLength_LessThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_currentReprogChip_MSoC_REPROG_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestDownload_currentReprogChip_MSoC_REPROG_addr_Of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_RequestDownload_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_RequestDownload_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_TransferData_No_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_TransferData_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_TransferData_addr_of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_TransferData_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_TransferData_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_TransferData_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_RequestTransferExit_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_RequestTransferExit_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_RequestTransferExit_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CheckMemory_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CheckMemory_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CheckMemory_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_NOT_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_NOT_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_NOT_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_NOT_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK_01"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_CoherencyCheck_SomeIP_ret_Call_Equal_E_OK_someip_arg_Call_result_E_OK_02"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_Install_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_Install_SomeIP_ret_Call_Equal_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_Install_SomeIP_ret_Call_Equal_E_OK_someiparg_call_NOTOK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestTransferExit_No_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestTransferExit_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_RequestTransferExit_address_of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CheckMemory_No_Null_Ptr_UdsReqLength_LessThan_73"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CheckMemory_No_Null_Ptr_UdsReqLength_GreaterThan_73"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CheckMemory_No_Null_Ptr_UdsReqLength_EQUAL_73"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CheckMemory_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CheckMemory_address_of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CoherencyCheck_TestCase"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_Install_No_Null_Ptr_UdsReqLength_GreaterThan_1085"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_Install_No_Null_Ptr_UdsReqLength_LessThan_1085"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_Install_No_Null_Ptr_UdsReqLength_EQUAL_1085"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_Install_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_Install_address_of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStart_NO_NULL_PTR_addressLength_MoreThan_8_memSizeLength_MoreThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStart_NO_NULL_PTR_addressLength_MoreThan_8_memSizeLength_LessThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStart_NO_NULL_PTR_addressLength_LessThan_8_memSizeLength_MoreThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_resetSystem_ret_Call_Equal_E_OK_No_NULL_Ptrs"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_resetSystem_ret_Call_Equal_E_NOT_OK_No_NULL_Ptrs"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_resetSystem_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_resetSystem_address_of_UdsReqLength_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_WRITE_FINGERPRINT"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_ERASE_MEMORY"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_REQUEST_DOWNLOAD"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_TRANSFER_DATA"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_TRANSFER_EXIT"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_CHECK_MEMORY"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_INSTALL_START"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_CHECK_PROGRAMMING_DEPENDENCIES"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_RESET"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_NONE"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_NONE_MSocService_NA"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_NONE_2"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_INSTALL_STATUS"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_EVENT_INSTALL_STOP"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_currentEvent_default"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_MainFunction_WriteCalledBef_DoIP"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CoherencyCheck_aubUdsData_Null_Ptr_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CoherencyCheck_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_CoherencyCheck_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStatus_aubUdsData_Null_Ptr_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStatus_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStatus_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStatus_No_Null_Ptr_UdsReqLength_LessThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStatus_No_Null_Ptr_UdsReqLength_EQUAL_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStop_aubUdsData_Null_Ptr_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStop_aubUdsData_Null_Ptr"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStop_UdsReqLength_NULL_PTR"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStop_No_Null_Ptr_UdsReqLength_LessThan_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="ICC_Wrapper_InstallStop_No_Null_Ptr_UdsReqLength_EQUAL_4"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStatus_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStatus_SomeIP_ret_Call_Equal_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStatus_SomeIP_ret_Call_Equal_E_OK_someip_arg_call_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStop_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStop_SomeIP_ret_Call_Equal_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_InstallStop_SomeIP_ret_Call_Equal_E_OK_someiparg_call_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_DoIPConnectionInfo_SomeIP_ret_Call_Equal_E_NOT_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="Handle_MSoC_Response_DoIPConnectionInfo_SomeIP_ret_Call_Equal_E_OK"/>
+      <testcase classname="test_swc_frwd_MSoC.SWC_ICCSWUpdate_forwarding" name="OS_TASK_OsTask_1Min_FingerprintForwardingTimeout_Handle_MSoC_Response_WriteFingerprint_NOT_Called"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_swc_iccdiagnostics" name="test_swc_iccdiagnostics" tests="0" time="0" timestamp="20220812T19:49:35"/>
+    <testsuite disabled="0" errors="0" id="test_swc_iccswup_flashing" name="test_swc_iccswup_flashing" tests="0" time="0" timestamp="20220812T19:49:38"/>
+    <testsuite disabled="0" errors="0" id="test_swc_IoHwAbs" name="test_swc_IoHwAbs" tests="1" time="1.20799994469" timestamp="20220812T19:49:38">
+      <testcase classname="test_swc_IoHwAbs.SWC_IoHwAbs" name="SWC_IoHwAbs_Test"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" id="test_swc_swupMOST" name="test_swc_swupMOST" tests="14" time="1.26300001144" timestamp="20220812T19:49:40">
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_both_NULL_PTR"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_both_puwLen_aubUdsData_neq_NULL_PTR"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_MSoC_ServiceID_4698_Availability_eq_0x0U"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_MSoC_ServiceID_4698_Availability_eq_0x0U_puwlen_and_aubUds_eq_NULL_PTR"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Trigger_udsRequest_SWC_SwUpdateMOST_test"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Handle_Response_SwUpdateMOST_test"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="SWC_SwUpdateMOST_RE1_ForwardRecieved_UDSRequest_ToMsoc_test"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="SWC_SwUpdateMOST_RE2_DRE_GetNotified_UDSResponse_SendBackToDOIPRoutingModule_test"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Handle_Response_SwUpdateMOST_test_E_NOT_OK"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Handle_Response_SwUpdateMOST_test_E_NOT_OK_someipretcall_E_NOT_OK"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="SWC_SwUpdateMOST_RE1_ForwardRecieved_UDSRequest_ToMsoc_test_flagnotset"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="SWC_SwUpdateMOST_RE2_DRE_GetNotified_UDSResponse_SendBackToDOIPRoutingModule_test2"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_MSoC_ServiceID_4698_Availability_eq_0x2U_NULLPTRLength"/>
+      <testcase classname="test_swc_swupMOST.SWC_SwUpdateMOST" name="Invoke_udsRequest_SWC_SwUpdateMOST_MSoC_ServiceID_4698_Availability_eq_0x2U_NULLPTRdata"/>
+    </testsuite>
+  </testsuites>

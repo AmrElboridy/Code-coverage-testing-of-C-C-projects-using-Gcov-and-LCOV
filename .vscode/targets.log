@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 14 15:16:56 2022
+# Make data base, printed on Mon Aug 15 11:37:42 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -22,6 +24,10 @@ USERPROFILE = C:\Users\aelboridy
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\aelboridy\AppData\Local
+# environment
+GENTHML = C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml
+# environment
+LCOV_HOME = C:\ProgramData\chocolatey\lib\lcov\tools
 # environment
 VSCODE_CWD = C:\Users\aelboridy\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +45,9 @@ USERDNSDOMAIN = BRIGHTSKIESINC.LOCAL
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9792_FUFHWQKQUMTIVPWN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11356_CUTHVNHGTRRLQSZA
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -87,7 +95,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 9792
+VSCODE_PID = 11356
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -117,7 +125,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\Projects\EB\Vcpu\Hard_disk_version\EB_RSU_Repo\Tasks\1-Video-wall_task\File\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Users\aelboridy\AppData\Local\Microsoft\WindowsApps;C:\Users\aelboridy\AppData\Local\Programs\Microsoft VS Code\bin
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\Projects\EB\Vcpu\Hard_disk_version\EB_RSU_Repo\Tasks\1-Video-wall_task\File\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\aelboridy\AppData\Local\Microsoft\WindowsApps;;C:\Users\aelboridy\AppData\Local\Programs\Microsoft VS Code\bin
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -129,7 +137,7 @@ MAKEFILES :=
 # environment
 PROMPT = $P$G
 # environment
-CHOCOLATEYLASTPATHUPDATE = 133049564333148939
+CHOCOLATEYLASTPATHUPDATE = 133049573374327188
 # environment
 LOGONSERVER = \\DC02-ALEX
 # environment
@@ -142,6 +150,7 @@ COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 PROGRAMW6432 = C:\Program Files
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+ 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -188,6 +197,8 @@ VSCODE_IPC_HOOK = \\.\pipe\3793c61daa3f1fba84acda830dcba617-1.70.1-main-sock
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
@@ -195,7 +206,7 @@ PROCESSOR_REVISION = 4e03
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=7/115=6%
+# Load=96/1024=9%, Rehash=0, Collisions=9/120=8%
 
 # Pattern-specific Variable Values
 
@@ -203,9 +214,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 
 # Directories
 
-# . (key c:/Projects/EB/Vcpu/Hard_disk_version/EB_RSU_Repo/Tasks/1-Video-wall_task, mtime 1660483015): 9 files, no impossibilities.
+# . (key c:/Projects/EB/Vcpu/Hard_disk_version/EB_RSU_Repo/Tasks/1-Video-wall_task, mtime 1660485391): 11 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -262,13 +273,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 168 B / avg = 10 B
-# current buf: size = 8174 B / used = 168 B / 
- count = 16 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 183 B / avg = 10 B
+# current buf: size = 8174 B / used = 183 B / count = 18 / avg = 10 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Sun Aug 14 15:16:56 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
+# Finished Make data base on Mon Aug 15 11:37:42 2022
 
  
