@@ -1,0 +1,14 @@
+        -:    0:Source:cond.c
+        -:    0:Programs:1
+        -:    1:#include "cond.h"
+        -:    2:
+        1:    3:uint32_t conditionalAdd(uint32_t aA, uint32_t aB) {
+        1:    4:  uint32_t lRet = 0;
+        1:    5:  if(aA > 10 && aA < 20) {
+    #####:    6:    lRet = aA + 2*aB;
+        -:    7:  } else {
+        1:    8:    lRet = aB;
+        -:    9:  }
+        -:   10:
+        1:   11:  return lRet;
+        -:   12:}
