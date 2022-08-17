@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 15 12:40:24 2022
+# Make data base, printed on Wed Aug 17 12:51:45 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -27,7 +29,7 @@ GENTHML = C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml
 # environment
 LCOV_HOME = C:\ProgramData\chocolatey\lib\lcov\tools
 # environment
-VSCODE_CWD = C:\Windows\system32
+VSCODE_CWD = C:\Windows\System32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -45,7 +47,9 @@ LCOV = C:\ProgramData\chocolatey\lib\lcov\tools\bin\lcov
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16972_GGOCCEHRUQLDAYVR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9168_YWJAQILMADILNBVE
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -93,7 +97,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 16972
+VSCODE_PID = 9168
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -203,7 +207,7 @@ PROCESSOR_REVISION = 4e03
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 # variable set hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=8/119=7%
+# Load=97/1024=9%, Rehash=0, Collisions=9/121=7%
 
 # Pattern-specific Variable Values
 
@@ -211,7 +215,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 
 # Directories
 
-# . (key c:/Projects/EB/Vcpu/Tasks/1-Video-wall_task, mtime 1660559421): 14 files, no impossibilities.
+# . (key c:/Projects/EB/Vcpu/Tasks/1-Video-wall_task, mtime 1660573235): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
 
@@ -239,8 +243,7 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File  
-has not been updated.
+#  File has not been updated.
 
 # Not a target:
 makefile:
@@ -271,12 +274,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 248 B / avg = 11 B
-# current buf: size = 8174 B / used = 248 B / count = 21 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 246 B / avg = 11 B
+# current buf: size = 8174 B / used = 246 B / count = 21 / avg = 11 B
 
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Mon Aug 15 12:40:24 2022
+# Finished Make data base on Wed Aug 17 12:51:45 2022
 
  

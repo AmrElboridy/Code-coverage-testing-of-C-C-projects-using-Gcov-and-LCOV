@@ -64,7 +64,7 @@ __gcov_.conditionalAdd:
 	.long	1094202154
 	.space 4
 	.quad	0
-	.long	-1582257795
+	.long	-1418103824
 	.space 4
 	.quad	.LC0
 	.quad	__gcov_merge_add

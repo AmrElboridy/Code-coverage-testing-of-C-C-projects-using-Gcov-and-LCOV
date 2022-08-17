@@ -10,10 +10,10 @@ make
 .\main.exe
 :: 2-  Gcov to Analyze Code Coverage
 :: all generated files are in the current directory .gcno and .gcda
-gcov main.c cond.c
+gcov main.c cond.c -d -w
 :: 3- generate a visual code coverage report
 ::  Generate the lcov.info data file
-perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\lcov  --capture --directory . --output-file lcov.info
+perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\lcov  -c -d . -o lcov.info
 :: 4- Generate coverage\html
 perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml -o .\coverage_html lcov.info
 :: 5- Run the python script to generate the coverage.xml file 
